@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Estate Consulting | Drees &amp; Sommer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Modernes Real Estate Consulting für Unternehmen. Beratung zu Immobilienstrategie, Effizienz, Nachhaltigkeit und Digitalisierung.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background: #f6f8fa;
+            color: #222;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+            height: 80px;
+        }
+        .logo {
+            height: 44px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #002965;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #0072ce;
+        }
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #002965;
+            font-size: 18px;
+        }
+
+		.header-image {
+            width: 100%;
+            height: 180px;
+            background: url('https://www.dreso.com/fileadmin/_processed_/8/6/csm_Fotolia_43086186_XXL_Fassade_fa9a547a7c.jpg') center/cover no-repeat;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            padding: 48px 40px 32px 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 24px;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #002965;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        ul {
+            margin: 16px 0 0 20px;
+            font-size: 1.05rem;
+        }
+        strong {
+            display: block;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #002965;
+        }
+        footer {
+            margin-top: 60px;
+            background: #002965;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .footer-top {
+            background: #0a3570;
+            text-align: center;
+            padding: 32px 0 12px 0;
+        }
+        .footer-top h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .footer-top p {
+            margin: 8px 0 0 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .footer-main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 48px;
+            padding: 32px 0 16px 0;
+            background: #002965;
+        }
+        .footer-col {
+            min-width: 160px;
+        }
+        .footer-col h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col ul li a {
+            color: #b3e0ff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+        .social-icons {
+            display: flex;
+            gap: 14px;
+            margin-top: 8px;
+        }
+        .social-icons img {
+            width: 28px;
+            height: 28px;
+            filter: invert(70%) sepia(100%) saturate(400%) hue-rotate(170deg) brightness(1.5);
+            transition: filter 0.2s;
+        }
+        .social-icons img:hover {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(2);
+        }
+        .footer-bottom {
+            background: #001a3a;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 0.95rem;
+            color: #b3e0ff;
+        }
+        @media (max-width: 1100px) {
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                gap: 12px;
+                padding: 16px;
+            }
+            main {
+                padding: 32px 16px 24px 16px;
+            }
+            .footer-main {
+                gap: 24px;
+            }
+        }
+        @media (max-width: 700px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .footer-main {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+            main {
+                margin: 16px 0 0 0;
+                padding: 16px 6px 10px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cityscape_silhouette.svg/2560px-Cityscape_silhouette.svg.png" alt="Drees & Sommer Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">MARKETS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="header-image"></div>
+    <main>
+        <h1>REAL ESTATE CONSULTING</h1>
+        <p>
+            Ob Immobilien als Hülle für das Kerngeschäft fungieren oder selbst eine attraktive Asset-Klasse darstellen: 
+            Aktuelles Real-Estate-Know-how durch Real Estate Consulting ist in jedem Fall ein wichtiger Wettbewerbsvorteil.
+        </p>
+        <h2>UNTERNEHMENSIMMOBILIEN: FLÄCHEN- UND KOSTENEFFIZIENZ STEIGERN</h2>
+        <p>
+            Ob bei großen Corporates oder im produzierenden Mittelstand: Die Immobilie fungiert häufig nur als eine Hülle und als notwendige Infrastruktur, um das eigentliche Kerngeschäft zu ermöglichen. Doch geht es auch anders: Portfolio-Flexibilität, Kostenoptimierung, Digitalisierung, Standortentwicklung, neue Arbeitswelten oder Nachhaltigkeit sind nur einige der Herausforderungen eines professionellen Corporate Real Estate Managements. Verwalten und Verwerten von betriebsnotwendigen Immobilien war gestern – ein gezieltes Corporate Real Estate Management identifiziert und hebt Potenziale zur Steigerung der Flächen- und Kosteneffizienz.
+        </p>
+        <strong>Wir beraten Unternehmen rund um ihr Real Estate Management – zum Beispiel in Bezug auf</strong>
+        <ul>
+            <li>Strategie</li>
+            <li>Organisation und Prozesse</li>
+            <li>Governance und Steuerung</li>
+            <li>Beschaffung</li>
+            <li>Workplace-Lösungen</li>
+            <li>Nachhaltigkeit</li>
+            <li>Digitalisierung</li>
+        </ul>
+    </main>
+
+</body>
+</html>
+
+
